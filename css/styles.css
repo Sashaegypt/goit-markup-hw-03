@@ -33,12 +33,12 @@ img {
   padding-right: 15px;
   padding-left: 15px;
   width: 1200px;
+  margin: 0 auto;
 }
 
 /*section*/
 .section {
   padding: 94px 0 94px 0;
-  width: 1200px;
 }
 
 .visually-hidden {
@@ -115,6 +115,9 @@ img {
 .contact-item {
   margin-right: 50px;
 }
+.contact-item:last-childp {
+  margin-right: 0px;
+}
 
 .link:hover,
 .link:focus {
@@ -154,7 +157,6 @@ img {
 
 /* Hero section */
 .hero {
-  padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
@@ -191,6 +193,7 @@ img {
 /*desicions*/
 .flex-decisions {
   display: flex;
+  gap: 30px;
 }
 
 .h3-text {
@@ -218,11 +221,11 @@ img {
   line-height: 1.2;
   color: #212121;
 }
-
+/* flex */
 .flex-what-doing {
   display: flex;
 }
-
+/* what-doing */
 .what-doing {
   margin-bottom: 50px;
   text-align: center;
@@ -238,7 +241,12 @@ img {
 .img:first-child {
   margin-left: 0;
 }
+.what-doing-section {
+  padding-top: 0;
+}
+
 /* our team */
+
 .bc-team {
   background-color: #f5f4fa;
 }
@@ -266,13 +274,10 @@ img {
 
 .cards-text {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.cards-container {
-  width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 /* member team */
 .member-team {
   color: #212121;
@@ -280,14 +285,11 @@ img {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
-  padding-top: 30px;
 }
 
 .class {
   color: #757575;
   line-height: 1.2;
-  padding-top: 10px;
-  padding-bottom: 30px;
   margin: 0;
 }
 
@@ -295,7 +297,7 @@ img {
 
 .footer {
   background-color: #2f303a;
-  padding: top 60px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
