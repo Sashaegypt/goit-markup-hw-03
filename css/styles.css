@@ -28,6 +28,9 @@ img {
   height: auto;
 }
 
+:root {
+  --studio-portfolio-color: #2196f3;
+}
 /* container */
 .container {
   padding-right: 15px;
@@ -76,6 +79,7 @@ img {
 }
 
 /* links */
+
 .link {
   text-decoration: none;
   font-weight: 500;
@@ -100,6 +104,12 @@ img {
 .nav-item:last-child {
   margin-right: 0;
 }
+.link.studio.current {
+  color: var(--studio-portfolio-color);
+}
+.link.portfolio.current {
+  color: var(--studio-portfolio-color);
+}
 
 /* contacts / contact flex */
 .contact {
@@ -123,7 +133,8 @@ img {
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.link {
   color: #2196f3;
 }
 
@@ -372,6 +383,7 @@ img {
 .tel-footer:hover,
 .tel-footer:focus {
   color: #2196f3;
+  cursor: pointer;
 }
 
 /* PORTFOLIO!!! */
@@ -392,7 +404,6 @@ img {
   font-family: inherit;
   font-weight: 500;
   border-radius: 4px;
-  margin-left: 8px;
   border: none;
 }
 .item-buttons {
@@ -407,10 +418,12 @@ img {
   color: #212121;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
 }
 .platform {
   color: #757575;
   line-height: 1.9;
+  margin: 0;
 }
 
 /* Cards! */
@@ -418,8 +431,8 @@ img {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
   margin-bottom: -30px;
+  margin-left: -30px;
 }
 
 .card-set {
@@ -436,10 +449,11 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  border-bottom: 1px #eeeeee;
-  border-left: 1px #eeeeee;
-  border-right: 1px #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .card-set a {
   width: 370px;
+  text-decoration: none;
 }
